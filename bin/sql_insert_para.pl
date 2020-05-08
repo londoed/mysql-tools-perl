@@ -93,7 +93,7 @@ if ($rv != 1) {
 
 exit($rc);
 
-sub usage() {
+sub usage {
   print STDERR "[!] USAGE: sql_insert_para.pl [-d database] [-e max_errors] [-l] [-t table_name] < <input_file>\n";
   print STDERR <<EOF;
 -l    Lock Tables
@@ -103,7 +103,7 @@ EOF
   exit(8);
 }
 
-sub insert_row() {
+sub insert_row {
   my $dbh = shift;
   my $hr = shift;
 

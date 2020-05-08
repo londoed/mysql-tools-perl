@@ -78,7 +78,7 @@ if ($rv != 1) {
 
 exit(0);
 
-sub print_pipe() {
+sub print_pipe {
   if (!@field_list) {
     foreach my $k (sort(keys(%$row_hr))) {
       push(@field_list, lc($k));
@@ -97,7 +97,7 @@ sub print_pipe() {
   print join('|', (map { $row_hr->{$_} } @keys)), "\n";
 }
 
-sub print_para() {
+sub print_para {
   foreach my $k (sort(keys(%$row_hr))) {
     my $v = $row_hr->{$k};
 

@@ -69,6 +69,6 @@ if ($rv != 1) {
 
 exit(0);
 
-sub usage() {
+sub usage {
   die "[!] USAGE: sql_do.pl -d <database> 'statement' > <output_file>\n";
 }

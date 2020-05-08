@@ -135,6 +135,6 @@ if ($rv != 1) {
 
 exit($rc);
 
-sub usage() {
+sub usage {
   die "[!] USAGE: sql_update.pl [-d database] tablename keyfield < <input_file>\n";
 }

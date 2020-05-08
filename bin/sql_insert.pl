@@ -121,7 +121,7 @@ if ($rv != 1) {
 
 exit($rc);
 
-sub usage() {
+sub usage {
   print STDERR "[!] USAGE: sql_insert.pl [-d database] [-e max_errors] [-l] [-t table_name] [-z] < <input_file>\n";
   print STDERR <<EOF;
 -l    Lock Tables
